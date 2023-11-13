@@ -3,5 +3,6 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int printf_char(va_list va);
+int printf_string(va_list va);
 
 #endif
