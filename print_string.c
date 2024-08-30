@@ -1,29 +1,32 @@
 #include "main.h"
+
 /**
- * _strlen - Returns the length of the string
- * @str: string pointer
- * Return: 1
+ * _strlen - finds the lenght of a string.
+ * @s: string
+ * Return: integer.
  */
 
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int i;
+	int c;
 
-	for (i = 0; str[i] != 0; i++)
+	for (c = 0; s[c] != 0; c++)
 		;
-	return (i);
+	return (c);
+
 }
+
 /**
- * _strlenc - strlen function applied for constant character pointer string
- * @str: char pointer
- * Return: 1
+ * _strlenc - finds length of a string but for constant characters
+ * @s: string
+ * Return: integer
  */
 
-int _strlenc(const char *str)
+int _strlenc(const char *s)
 {
-	int i;
+	int c;
 
-	for (i = 0; str[i] != 0; i++)
+	for (c = 0; s[c] != 0; c++)
 		;
-	return (i);
+	return (c);
 }
